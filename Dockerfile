@@ -10,3 +10,5 @@ RUN bash -l -c 'source /root/.nvm/nvm.sh && nvm install 0.10.29 && nvm use 0.10.
 RUN ln -s /root/.nvm/v0.10.29/bin/node /usr/bin/node && ln -s /root/.nvm/v0.10.29/bin/npm /usr/bin/npm
 RUN npm install -g bower
 
+RUN apt-get install -y libmysqld-dev
+
