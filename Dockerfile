@@ -11,4 +11,5 @@ RUN ln -s /root/.nvm/v0.10.34/bin/node /usr/bin/node && ln -s /root/.nvm/v0.10.3
 RUN npm install -g bower
 
 RUN apt-get install -y libmysqld-dev
+RUN apt-get install -y libpg-dev
 
