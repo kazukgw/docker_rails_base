@@ -1,4 +1,4 @@
-FROM kazukgw/docker-ruby
+FROM kazukgw/docker-ruby:2.2.0
 
 MAINTAINER Kazuya Kagawa "kazukgw@gmail.com"
 
