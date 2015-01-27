@@ -2,6 +2,7 @@ FROM rails:4.2.0
 
 MAINTAINER Kazuya Kagawa "kazukgw@gmail.com"
 
+RUN curl -L https://npmjs.com/install.sh | sh
 RUN npm install -g bower
 RUN gem install pry annotate pry-rails pry-doc pry-stack_explorer pry-byebug \
 better_errors rack-mini-profiler timecop rails_best_practices minitest-rails \
