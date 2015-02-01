@@ -3,6 +3,14 @@ FROM kazukgw/docker-ruby:2.2.0
 MAINTAINER Kazuya Kagawa "kazukgw@gmail.com"
 
 RUN apt-get update && \
+      apt-get install -y language-pack-ja --no-install-recommends && \
+      rm -rf /var/lib/apt/lists/*
+RUN update-locale LANG=ja_JP.UTF-8
+ENV LANG ja_JP.UTF-8  
+ENV LANGUAGE ja_JP:ja
+ENV LC_ALL ja_JP.UTF-8
+
+RUN apt-get update && \
       apt-get install -y nodejs --no-install-recommends && \
       rm -rf /var/lib/apt/lists/*
 
@@ -14,7 +22,6 @@ RUN apt-get update && \
         libpq-dev \
         sqlite3 --no-install-recommends && \
       rm -rf /var/lib/apt/lists/*
-
 
 ##### 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
