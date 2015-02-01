@@ -9,7 +9,9 @@ RUN apt-get update && \
 RUN apt-get update && \ 
       apt-get install -y \
         mysql-client \
+        libmysqld-dev \ 
         postgresql-client \
+        libpq-dev \
         sqlite3 --no-install-recommends && \
       rm -rf /var/lib/apt/lists/*
 
@@ -36,6 +38,7 @@ better_errors \
 rack-mini-profiler \
 timecop \
 rails_best_practices \
+mysql2 \
 minitest-rails \
 factory_girl_rails \
 database_cleaner \
