@@ -1,12 +1,29 @@
-FROM rails:4.2.0
+FROM kazukgw/ruby:2.2.0
 
 MAINTAINER Kazuya Kagawa "kazukgw@gmail.com"
 
+RUN apt-get update && \
+      apt-get install -y nodejs --no-install-recommends && \
+      rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && \ 
+      apt-get install -y \
+        mysql-client \
+        postgresql-client \
+        sqlite3 --no-install-recommends && \
+      rm -rf /var/lib/apt/lists/*
+
+
+##### 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
-# install npm
+# install npm && bower
 RUN curl -L https://npmjs.com/install.sh | sh
 RUN npm install -g bower
+
+ENV RAILS_VERSION 4.2.0
+
+RUN gem install rails --version "$RAILS_VERSION"
 
 RUN gem install \
 pry \
@@ -66,3 +83,4 @@ therubyracer \
 twitter-bootstrap-rails \
 uglifier \
 web-console
+
