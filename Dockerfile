@@ -89,7 +89,6 @@ ref \
 sass-rails \
 sdoc \
 spring \
-therubyracer \
 twitter-bootstrap-rails \
 uglifier \
 web-console
