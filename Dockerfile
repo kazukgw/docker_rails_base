@@ -1,4 +1,4 @@
-FROM kazukgw/docker-ruby:2.2.0
+FROM kazukgw/docker-ruby:2.1.5
 
 MAINTAINER Kazuya Kagawa "kazukgw@gmail.com"
 
@@ -6,7 +6,7 @@ RUN apt-get update && \
       apt-get install -y language-pack-ja --no-install-recommends && \
       rm -rf /var/lib/apt/lists/*
 RUN update-locale LANG=ja_JP.UTF-8
-ENV LANG ja_JP.UTF-8  
+ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:ja
 ENV LC_ALL ja_JP.UTF-8
 
@@ -14,24 +14,24 @@ RUN apt-get update && \
       apt-get install -y nodejs --no-install-recommends && \
       rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update && \ 
+RUN apt-get update && \
       apt-get install -y \
         imagemagick \
         mysql-client \
-        libmysqld-dev \ 
+        libmysqld-dev \
         postgresql-client \
         libpq-dev \
         sqlite3 --no-install-recommends && \
       rm -rf /var/lib/apt/lists/*
 
-##### 
+#####
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 # install npm && bower
 RUN curl -L https://npmjs.com/install.sh | sh
 RUN npm install -g bower
 
-ENV RAILS_VERSION 4.2.0
+ENV RAILS_VERSION 4.0.4
 
 RUN gem install rails --version "$RAILS_VERSION"
 
