@@ -81,7 +81,6 @@ jbuilder \
 jquery-rails \
 less \
 less-rails \
-libv8 \
 pg \
 rails_serve_static_assets \
 rails_stdout_logging \
