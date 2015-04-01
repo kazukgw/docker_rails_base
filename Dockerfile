@@ -37,7 +37,7 @@ RUN gem install rails --version "$RAILS_VERSION"
 
 RUN gem install \
 pry \
-annotate \
+# annotate \
 pry-rails \
 pry-doc \
 pry-stack_explorer \
