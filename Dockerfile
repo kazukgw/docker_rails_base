@@ -52,43 +52,43 @@ factory_girl_rails \
 database_cleaner \
 mocha \
 bullet \
-yajl-ruby \
-devise \
-bootstrap-sass \
-activerecord-import \
-haml-rails \
-parallel \
-nokogiri \
-will_paginate \
-bootstrap-will_paginate \
-coffee-script \
-coffee-rails \
-commonjs \
-responders \
-unf_ext \
-unf \
-domain_name \
-email_validator \
-http-cookie \
-net-http-digest_auth \
-net-http-persistent \
-ntlm-http \
-webrobots \
-mechanize \
-sprockets-rails \
-i18n_generators \
-jbuilder \
-jquery-rails \
-less \
-less-rails \
-pg \
-rails_serve_static_assets \
-rails_stdout_logging \
-rails_12factor \
-ref \
-sass-rails \
-sdoc \
-spring \
-twitter-bootstrap-rails \
-uglifier
+yajl-ruby
+# devise \
+# bootstrap-sass \
+# activerecord-import \
+# haml-rails \
+# parallel \
+# nokogiri \
+# will_paginate \
+# bootstrap-will_paginate \
+# coffee-script \
+# coffee-rails \
+# commonjs \
+# responders \
+# unf_ext \
+# unf \
+# domain_name \
+# email_validator \
+# http-cookie \
+# net-http-digest_auth \
+# net-http-persistent \
+# ntlm-http \
+# webrobots \
+# mechanize \
+# sprockets-rails \
+# i18n_generators \
+# jbuilder \
+# jquery-rails \
+# less \
+# less-rails \
+# pg \
+# rails_serve_static_assets \
+# rails_stdout_logging \
+# rails_12factor \
+# ref \
+# sass-rails \
+# sdoc \
+# spring \
+# twitter-bootstrap-rails \
+# uglifier
 
