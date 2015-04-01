@@ -90,6 +90,5 @@ sass-rails \
 sdoc \
 spring \
 twitter-bootstrap-rails \
-uglifier \
-web-console
+uglifier
 
